@@ -1,7 +1,8 @@
 # s35227-pja.github.io
 <!DOCTYPE html>
 <head>
-  <title> Gdyby babcia miała wąsy</title>title>
+  <title> Gdyby babcia miała wąsy</title>
+</head>
   <body>
     <h1> to by była dziadkiem </h1>
     <h2> a gdyby dziadek nosił kiecki </h2>
