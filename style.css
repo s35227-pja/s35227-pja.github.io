@@ -1,16 +1,6 @@
-<style>
-    @import url("https://use.typekit.net/sbd3uoa.css");
-</style>
 
 <style>
-     body {
-         margin: 0;
-         min-height: 100vh;
-         padding: 30px;
-         background: radial-gradient(ellipse at center, #fffdf8 0%, #f8f1e5 65%, transparent 100%), linear-gradient(90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
-         cursor:none!important;
-     }
-
+     
      #paw {
          position: fixed;
          width: 40px;
