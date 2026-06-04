@@ -1,1 +1,105 @@
+ <style>
+     body {
+         margin: 0;
+         min-height: 100vh;
+         padding: 30px;
+         background: radial-gradient( ellipse at center, #fffdf8 0%, #f8f1e5 65%, transparent 100% ), linear-gradient( 90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
+         cursor: none !important;
+     }
 
+     #paw {
+         position: fixed;
+         width: 40px;
+         height: 40px;
+         background-image: url("./paw.svg");
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: center;
+         pointer-events: none;
+         z-index: 9999;
+         transform: translate(-50%, -50%);
+         transition: transform 0.15s ease, filter 0.15s ease;
+     }
+
+         #paw.hover-active {
+             transform: translate(-50%, -50%) scale(1.4);
+             filter: drop-shadow(0 6px 10px rgba(0,0,0,0.3));
+         }
+
+     .navbar {
+         display: flex;
+         justify-content: center;
+         gap: 15px;
+         margin: 30px 0;
+         flex-wrap: wrap;
+     }
+
+         .navbar a {
+             font-family: zebrawood-std-admitone, sans-serif;
+             text-decoration: none;
+             color: #6d311a;
+             background-color: #ffd6a5;
+             padding: 12px 20px;
+             border-radius: 20px;
+             font-weight: bold;
+             transition: all 0.3s ease;
+             box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+         }
+
+     .navbar {
+         transform: scale(2);
+         transform-origin: center;
+     }
+
+         .navbar a:hover {
+             background-color: #f89d4b;
+             transform: translateY(-3px);
+             box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+         }
+
+
+     .kot-banner img {
+         position: relative;
+         max-width: 90%;
+         margin: 10px auto 30px auto;
+         display: block;
+         mask-image: radial-gradient( ellipse at center, black 40%, rgba(0,0,0,0.8) 65%, transparent 100% );
+         -webkit-mask-image: radial-gradient( ellipse at center, black 40%, rgba(0,0,0,0.8) 65%, transparent 100% );
+         box-shadow: 0 0 80px rgba(248,241,229,0.8);
+     }
+
+     .kot-banner {
+         position: relative;
+         width: fit-content;
+         margin: 0 auto;
+     }
+
+     .oko {
+         position: absolute;
+         width: 150px;
+         height: 120px;
+         border-radius: 50%;
+         opacity: 0;
+         transition: all 0.3s ease;
+     }
+
+     .lewe {
+         left: 25%;
+         top: 28%;
+     }
+
+     .prawe {
+         left: 63%;
+         top: 28%;
+     }
+
+     .kot-banner:hover .oko {
+         opacity: 0.4;
+     }
+
+     .oko:hover {
+         background: rgba(127,255,0,0.35);
+         box-shadow: 0 0 25px #7fff00, 0 0 50px #7fff00, 0 0 100px #7fff00;
+         transform: scale(1.15);
+     }
+ </style>
