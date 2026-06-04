@@ -17,7 +17,7 @@
             cursor: none;
         }
 
-            #paw-cursor {
+            cursor {
                 position: fixed;
                 width: 40px;
                 height: 40px;
@@ -96,12 +96,12 @@ font-style: normal;">
     </footer>
 
 
-    <div id="paw cursor.svg"></div>
+    <div id="paw.svg"></div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
 
-            const cursor = document.getElementById("paw cursor.svg");
+            const cursor = document.getElementById("paw.svg");
 
             document.addEventListener("mousemove", (e) => {
                 cursor.style.left = e.clientX + "px";
