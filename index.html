@@ -66,19 +66,14 @@
                     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
                 }
 
-        .hero {
-            background-image: url("oczy.png");
-            background-size: 900px auto;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
 
-            .hero::before {
-                content: "";
-                position: absolute;
-                inset: 0;
-                background: radial-gradient( ellipse at center, transparent 40%, rgba(248,241,229,0.8) 90% );
-            }
+        .kot-banner img {
+            width: 100%;
+            display: block;
+            mask-image: radial-gradient( ellipse at center, black 40%, rgba(0,0,0,0.8) 65%, transparent 100% );
+            -webkit-mask-image: radial-gradient( ellipse at center, black 40%, rgba(0,0,0,0.8) 65%, transparent 100% );
+            box-shadow: 0 0 80px rgba(248,241,229,0.8);
+        }
 
     </style>
 
@@ -91,6 +86,7 @@
 font-family: zebrawood-std-admitone, sans-serif;
 font-size:1000%;
 font-weight: 700;
+ margin-bottom: 0;
 font-style: normal;">
 
             Rude koty
