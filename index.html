@@ -66,7 +66,21 @@
                     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
                 }
 
+        .kot-banner {
+            position: relative;
+            width: 900px;
+            max-width: 90%;
+            margin: 40px auto;
+        }
 
+            .kot-banner img {
+                width: 100%;
+                display: block;
+                border-radius: 30px;
+                box-shadow: 0 0 30px rgba(198,134,66,0.4);
+                mask-image: radial-gradient( ellipse at center, black 65%, transparent 100% );
+                -webkit-mask-image: radial-gradient( ellipse at center, black 65%, transparent 100% );
+            }
 
     </style>
 
@@ -85,7 +99,15 @@ font-style: normal;">
         </h1>
     </header>
 
-    
+    <div class="kot-banner">
+
+        <img src="oczy.png" alt="Rudy kot">
+
+        <a href="sekret.html" class="oko lewe"></a>
+        <a href="sekret.html" class="oko prawe"></a>
+
+    </div>
+
     <nav class="navbar">
         <a href="#">Genetyka</a>
         <a href="#"> W liczbach</a>
