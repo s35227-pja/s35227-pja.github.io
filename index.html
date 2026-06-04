@@ -14,12 +14,28 @@
             min-height: 100vh;
             padding: 30px;
             background: radial-gradient( ellipse at center, #fffdf8 0%, #f8f1e5 65%, transparent 100% ), linear-gradient( 90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
-        }
+            cursor: none;
+
+            #paw-cursor {
+                position: fixed;
+                width: 40px;
+                height: 40px;
+                background: url("paw cursor.svg") no-repeat center / contain;
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+                transition: transform 0.15s ease, filter 0.15s ease;
+            }
+            
+            hover-active {
+                transform: translate(-50%, -50%) scale(1.4);
+                filter: drop-shadow(0 6px 10px rgba(0,0,0,0.3));
+            }
     </style>
 
 </head>
 
-<body>    
+<body>
 
 
     <header>
@@ -29,7 +45,8 @@ font-size:1000%;
 font-weight: 700;
 font-style: normal;">
 
-            Rude koty </h1>
+            Rude koty
+        </h1>
     </header>
 
     <nav>
@@ -76,6 +93,39 @@ font-style: normal;">
         <p style="color:darkblue; background-color:antiquewhite"> autorka: Szanowna Pani Xandra </p>
         <p> <a href="mailto:s35227@pjwstk.edu.pl"></a></p>
     </footer>
+
+
+    <div id="paw cursor"></div>
+
+    <script>
+    const cursor = document.getElementById("paw-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });</script>
+
+
+    <script>
+        const cursor = document.getElementById("paw-cursor");
+
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = e.clientX + "px";
+            cursor.style.top = e.clientY + "px";
+        });
+
+        const clickable = "a, button, .clickable";
+
+        document.querySelectorAll(clickable).forEach(el => {
+            el.addEventListener("mouseenter", () => {
+                cursor.classList.add("hover-active");
+            });
+
+            el.addEventListener("mouseleave", () => {
+                cursor.classList.remove("hover-active");
+            });
+        });
+    </script>
 
 
 </body>
