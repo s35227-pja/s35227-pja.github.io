@@ -17,21 +17,22 @@
             cursor: none;
         }
 
-            cursor {
-                position: fixed;
-                width: 40px;
-                height: 40px;
-                background: url("paw cursor.svg") no-repeat center / contain;
-                pointer-events: none;
-                transform: translate(-50%, -50%);
-                z-index: 9999;
-                transition: transform 0.15s ease, filter 0.15s ease;
-            }
-            
-            hover-active {
+        #paw {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            background: url("paw") no-repeat center/contain;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.15s ease, filter 0.15s ease;
+        }
+
+            #paw.hover-active {
                 transform: translate(-50%, -50%) scale(1.4);
                 filter: drop-shadow(0 6px 10px rgba(0,0,0,0.3));
             }
+       
     </style>
 
 </head>
@@ -96,21 +97,19 @@ font-style: normal;">
     </footer>
 
 
-    <div id="paw.svg"></div>
+    <div id="paw"></div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
 
-            const cursor = document.getElementById("paw.svg");
+            const cursor = document.getElementById("paw");
 
-            document.addEventListener("mousemove", (e) => {
+            document.addEventListener("mousemove", e => {
                 cursor.style.left = e.clientX + "px";
                 cursor.style.top = e.clientY + "px";
             });
 
-            const clickable = "a, button, .clickable";
-
-            document.querySelectorAll(clickable).forEach(el => {
+            document.querySelectorAll("a, button, input").forEach(el => {
                 el.addEventListener("mouseenter", () => {
                     cursor.classList.add("hover-active");
                 });
@@ -120,7 +119,13 @@ font-style: normal;">
                 });
             });
 
-        });
+            document.addEventListener("mousedown", () => {
+                cursor.style.transform = "translate(-50%, -50%) scale(0.8)";
+            });
+
+            document.addEventListener("mouseup", () => {
+                cursor.style.transform = "translate(-50%, -50%) scale(1)";
+            });
     </script>
 
 
