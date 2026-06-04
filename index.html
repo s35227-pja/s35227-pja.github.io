@@ -4,7 +4,7 @@
 <head>
 
     <title> Rude koty są super </title>
-    <meta name="description" contnet="strona o fascynującym świecie rudych kotów">
+    <meta name="description" content="strona o fascynującym świecie rudych kotów">
     <style>
         @import url("https://use.typekit.net/sbd3uoa.css");
     </style>
@@ -85,31 +85,34 @@
 
         .oko {
             position: absolute;
-            width: 90px;
-            height: 90px;
+            width: 130px;
+            height: 130px;
             border-radius: 50%;
-            background: rgba(0,255,0,0.25);
-            border: 2px solid lime;
+            opacity: 0; /* niewidoczne */
             transition: all 0.3s ease;
         }
 
         .lewe {
-            left: 21%;
-            top: 56%;
+            left: 17%;
+            top: 34%;
         }
 
         .prawe {
-            left: 71%;
-            top: 56%;
+            left: 73%;
+            top: 34%;
         }
 
-            .oko:hover {
-                background: rgba(0,255,0,0.45);
-                box-shadow: 0 0 20px #7fff00, 0 0 40px #7fff00, 0 0 80px #7fff00;
-                transform: scale(1.1);
-            }
+        
+        .kot-banner:hover .oko {
+            opacity: 0.4;
+        }
 
-       
+        .oko:hover {
+            background: rgba(127,255,0,0.35);
+            box-shadow: 0 0 25px #7fff00, 0 0 50px #7fff00, 0 0 100px #7fff00;
+            transform: scale(1.15);
+        }
+           
 
     </style>
 
