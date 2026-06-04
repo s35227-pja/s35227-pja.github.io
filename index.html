@@ -15,6 +15,7 @@
             padding: 30px;
             background: radial-gradient( ellipse at center, #fffdf8 0%, #f8f1e5 65%, transparent 100% ), linear-gradient( 90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
             cursor: none;
+        }
 
             #paw-cursor {
                 position: fixed;
@@ -98,32 +99,27 @@ font-style: normal;">
     <div id="paw cursor"></div>
 
     <script>
-    const cursor = document.getElementById("paw-cursor");
+        document.addEventListener("DOMContentLoaded", () => {
 
-        document.addEventListener("mousemove", (e) => {
-            cursor.style.left = e.clientX + "px";
-            cursor.style.top = e.clientY + "px";
-        });</script>
+            const cursor = document.getElementById("paw cursor");
 
-
-    <script>
-        const cursor = document.getElementById("paw-cursor");
-
-        document.addEventListener("mousemove", (e) => {
-            cursor.style.left = e.clientX + "px";
-            cursor.style.top = e.clientY + "px";
-        });
-
-        const clickable = "a, button, .clickable";
-
-        document.querySelectorAll(clickable).forEach(el => {
-            el.addEventListener("mouseenter", () => {
-                cursor.classList.add("hover-active");
+            document.addEventListener("mousemove", (e) => {
+                cursor.style.left = e.clientX + "px";
+                cursor.style.top = e.clientY + "px";
             });
 
-            el.addEventListener("mouseleave", () => {
-                cursor.classList.remove("hover-active");
+            const clickable = "a, button, .clickable";
+
+            document.querySelectorAll(clickable).forEach(el => {
+                el.addEventListener("mouseenter", () => {
+                    cursor.classList.add("hover-active");
+                });
+
+                el.addEventListener("mouseleave", () => {
+                    cursor.classList.remove("hover-active");
+                });
             });
+
         });
     </script>
 
