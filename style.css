@@ -95,3 +95,6 @@
          transform: scale(1.15);
      }
  
+body {
+    border: 10px solid red;
+}
