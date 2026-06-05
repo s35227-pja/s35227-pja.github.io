@@ -54,7 +54,6 @@ h1 {
          }
 
  
-     }
 
          .navbar a:hover {
              background-color: #f89d4b;
@@ -197,7 +196,4 @@ color:purple;
     transform: scale(1.03);
     display: inline-block;
     transition: transform 0.3s ease;
-}
-* {
-    outline: 2px solid red !important;
 }
