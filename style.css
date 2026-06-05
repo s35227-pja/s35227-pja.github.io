@@ -9,6 +9,9 @@
         linear-gradient(90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
         cursor: none !important;
     }
+h1 {
+    margin-top: 0;
+}
      #paw {
          position: fixed;
          width: 40px;
