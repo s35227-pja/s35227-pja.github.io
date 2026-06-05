@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genetyka rudych kotów</title>
+</head>
+<body>
+    <h1>Genetyka rudych kotów</h1>
 
+    <p>
+        Za rude umaszczenie odpowiada gen O (Orange),
+        znajdujący się na chromosomie X.
+    </p>
+
+    <p>
+        Dlatego rude kocury występują częściej niż rude kotki.
+    </p>
+
+    <a href="index.html">Powrót</a>
+</body>
+</html>
