@@ -8,7 +8,7 @@
 <body>
   <a href="index.html">Powrót</a>
 
-  <div id="paw"></div>
+    <div id="paw"></div>
     
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -39,5 +39,7 @@
             });
         });
     </script>
+
+ 
 </body>
 </html>
