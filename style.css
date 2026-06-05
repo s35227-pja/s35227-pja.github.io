@@ -199,3 +199,6 @@ color:purple;
     display: inline-block;
     transition: transform 0.3s ease;
 }
+* {
+    outline: 2px solid red !important;
+}
