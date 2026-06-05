@@ -160,5 +160,26 @@ color:purple;
 .opis-strony p {
     font-size: 1.3rem;
     line-height: 1.8;}
+.tytul-glowny {
+    text-align: center;
+    font-family: zebrawood-std-admitone, sans-serif;
+    font-size: 10rem;
+    font-weight: 700;
+    font-style: normal;
 
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.tytul-glowny a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.tytul-glowny a:hover {
+    transform: scale(1.03);
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
 
