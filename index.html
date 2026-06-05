@@ -4,64 +4,57 @@
 <head>
 
     <title> Rude koty są super </title>
-    <meta name="description" contnet="strona o fascynującym świecie rudych kotów">
+    <meta name="description" content="strona o fascynującym świecie rudych kotów">
+
     <style>
         @import url("https://use.typekit.net/sbd3uoa.css");
     </style>
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            padding: 30px;
-            background: radial-gradient( ellipse at center, #fffdf8 0%, #f8f1e5 65%, transparent 100% ), linear-gradient( 90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
-            cursor: none;
-        }
+<style>
+    body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 30px;
+        background: radial-gradient(ellipse at center, #fffdf8 0%, #f8f1e5 65%, transparent 100%), 
+        linear-gradient(90deg, #c68642 0%, #e6c9a8 10%, #f8f1e5 20%, #f8f1e5 80%, #e6c9a8 90%, #c68642 100% );
+        cursor: none !important;
+    }
+</style>
 
-        #paw {
-            position: fixed;
-            width: 100px;
-            height: 100px;
-            border: 2px solid red;
-            background-image: url("./paw.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            pointer-events: none;
-            z-index: 9999;
-            transform: translate(-50%, -50%);
-            transition: transform 0.15s ease, filter 0.15s ease;
-        }
 
-            #paw.hover-active {
-                transform: translate(-50%, -50%) scale(1.4);
-                filter: drop-shadow(0 6px 10px rgba(0,0,0,0.3));
-            }
-       
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-
 
     <header>
         <h1 style="text-align:center;
 font-family: zebrawood-std-admitone, sans-serif;
 font-size:1000%;
 font-weight: 700;
+ margin-bottom: 0;
 font-style: normal;">
 
             Rude koty
         </h1>
     </header>
 
-    <nav>
-        <a href>genetyka rudej sierści</a> |
-        <a href>rudzielce w liczbach</a> |
-        <a href>galeria zdjęciowa</a> |
-        <a href>niespodzianka</a>
-    </nav>
+    <br />
 
+
+    <div class="kot-banner">
+        <img src="oczy.png" alt="Rudy kot">
+
+        <a href="genetyka.html" class="oko lewe"></a>
+        <a href="liczby.html" class="oko prawe"></a>
+    </div>
+
+    <nav class="navbar">
+        <a href="#">Genetyka</a>
+        <a href="#"> W liczbach</a>
+        <a href="#"> Galeria</a>
+        <a href="#"> Niespodzianka</a>
+    </nav>
 
     <h1 style="color:purple">W następnych paragrafach postaram się wam to udowodnić</h1>
 
@@ -96,8 +89,8 @@ font-style: normal;">
 
 
     <footer>
-        <p style="color:darkblue; background-color:antiquewhite"> autorka: Szanowna Pani Xandra </p>
-        <p> <a href="mailto:s35227@pjwstk.edu.pl"></a></p>
+        <p style="color:#964B00;")> autorka: Aleksandra Szymczak znana również jako s35227 </p>
+        <p> <a href="mailto:s35227@pjwstk.edu.pl">s35227@pjwstk.edu.pl</a></p>
     </footer>
 
 
