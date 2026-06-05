@@ -182,36 +182,3 @@ color:purple;
     display: inline-block;
     transition: transform 0.3s ease;
 }
-.genetyka-container {
-    display: flex;
-    gap: 40px;
-
-    max-width: 1400px;
-    margin: 50px auto;
-
-    align-items: flex-start;
-}
-
-.genetyka-tekst {
-    flex: 2;
-}
-
-.genetyka-obrazek {
-    flex: 1;
-    position: sticky;
-    top: 30px;
-}
-
-.genetyka-obrazek img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow:
-    0 8px 20px rgba(0,0,0,0.15);
-}
-
-.podpis-obrazka {
-    text-align: center;
-    font-size: 0.9rem;
-    margin-top: 10px;
-    font-style: italic;
-}
