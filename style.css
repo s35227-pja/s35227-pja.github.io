@@ -58,6 +58,25 @@
              box-shadow: 0 6px 12px rgba(0,0,0,0.25);
          }
 
+.menu-button {
+    font-family: zebrawood-std-admitone, sans-serif;
+    text-decoration: none;
+    color: #6d311a;
+    background-color: #ffd6a5;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    display: inline-block;
+}
+
+.menu-button:hover {
+    background-color: #f89d4b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
 
      .kot-banner img {
          position: relative;
