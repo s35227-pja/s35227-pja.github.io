@@ -89,21 +89,37 @@ h1 {
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
-     .kot-banner img {
-         position: relative;
-         max-width: 90%;
-         margin: 10px auto 30px auto;
-         display: block;
-         mask-image: radial-gradient( ellipse at center, black 40%, rgba(0,0,0,0.8) 65%, transparent 100% );
-         -webkit-mask-image: radial-gradient( ellipse at center, black 40%, rgba(0,0,0,0.8) 65%, transparent 100% );
-         box-shadow: 0 0 80px rgba(248,241,229,0.8);
-     }
+  .kot-banner img {
+    width: 90%;
+    max-width: 1400px;
+    height: auto;
 
-     .kot-banner {
-         position: relative;
-         width: fit-content;
-         margin: 0 auto;
-     }
+    display: block;
+    margin: 10px auto 30px auto;
+
+    mask-image: radial-gradient(
+        ellipse at center,
+        black 40%,
+        rgba(0,0,0,0.8) 65%,
+        transparent 100%
+    );
+
+    -webkit-mask-image: radial-gradient(
+        ellipse at center,
+        black 40%,
+        rgba(0,0,0,0.8) 65%,
+        transparent 100%
+    );
+
+    box-shadow: 0 0 80px rgba(248,241,229,0.8);
+}
+.kot-banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
 
      .oko {
          position: absolute;
