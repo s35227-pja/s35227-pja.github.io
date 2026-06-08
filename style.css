@@ -196,3 +196,24 @@ color:purple;
     transform: scale(1.05);
     filter: drop-shadow(0 0 10px rgba(255,140,0,0.5));
 }
+.lista-linkow {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.lista-linkow li {
+    margin: 15px 0;
+}
+
+.lista-linkow a {
+    font-size: 1.5rem;
+    color: #6d311a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lista-linkow a:hover {
+    color: #f89d4b;
+    text-decoration: underline;
+}
