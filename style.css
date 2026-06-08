@@ -350,41 +350,36 @@ color:purple;
 .svg-kotek svg {
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
 }
-.serce {
-    font-size: 900px;
-    text-align: center;
-
-    animation: serceAnimacja 1s steps(2) infinite;
+.heart {
+    display: block;
+    width: 120px;
+    margin: 20px auto;
+    transform-origin: center;
+    animation:
+        pulse 1s ease-in-out infinite,
+        colorChange 2s ease-in-out infinite;
 }
 
-@keyframes serceAnimacja {
+.heart path {
+    fill: #ff0000;
+}
 
-    0% {
-        color: red;
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
     }
-
     50% {
-        color: orange;
-    }
-
-    100% {
-        color: red;
+        transform: scale(1.25);
     }
 }
-@keyframes serceAnimacja {
 
-    0% {
-        color: red;
-        transform: scale(1);
+@keyframes colorChange {
+    0%, 100% {
+        fill: #ff0000;
+        filter: drop-shadow(0 0 8px #ff0000);
     }
-
     50% {
-        color: orange;
-        transform: scale(1.2);
-    }
-
-    100% {
-        color: red;
-        transform: scale(1);
+        fill: #c65d00;
+        filter: drop-shadow(0 0 18px #ff8c00);
     }
 }
