@@ -351,7 +351,7 @@ color:purple;
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
 }
 .serce {
-    font-size: 100px;
+    font-size: 900px;
     text-align: center;
 
     animation: serceAnimacja 1s steps(2) infinite;
