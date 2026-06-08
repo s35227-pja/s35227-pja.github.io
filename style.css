@@ -350,3 +350,25 @@ color:purple;
 .svg-kotek svg {
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
 }
+.footer-mail {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    background-color: #ffd6a5;
+    color: #6d311a;
+
+    text-decoration: none;
+    border-radius: 15px;
+
+    font-family: zebrawood-std-admitone, sans-serif;
+    font-size: 1.1rem;
+
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.footer-mail:hover {
+    background-color: #f89d4b;
+    transform: translateY(-2px);
+}
