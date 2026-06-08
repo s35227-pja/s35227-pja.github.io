@@ -335,3 +335,10 @@ color:purple;
 
     box-shadow: 0 0 25px rgba(248,157,75,0.8);
 }
+.slide {
+    opacity: 0.4;
+}
+
+.slide.active {
+    opacity: 1;
+}
