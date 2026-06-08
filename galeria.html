@@ -42,6 +42,32 @@
             });
         });
     </script>
+    <script>
+const slides = document.querySelectorAll(".slide");
+
+let activeIndex = 0;
+
+function updateGallery() {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slides[activeIndex].classList.add("active");
+}
+
+setInterval(() => {
+
+    activeIndex++;
+
+    if (activeIndex >= slides.length) {
+        activeIndex = 0;
+    }
+
+    updateGallery();
+
+}, 3000); // zmiana co 3 sekundy
+</script>
 <h1>
 Kocia galeria     
 </h1>
