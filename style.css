@@ -350,51 +350,16 @@ color:purple;
 .svg-kotek svg {
     filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
 }
-.kocie-serce {
-    position: relative;
-    font-size: 120px;
+.serce {
+    font-size: 100px;
     text-align: center;
-    width: fit-content;
-    margin: 50px auto;
 
-    animation: kotek 2s steps(2) infinite;
+    animation: serceAnimacja 1s steps(2) infinite;
 }
 
-.oczka,
-.nosek,
-.wasy {
-    position: absolute;
-    opacity: 0;
-}
-
-.oczka {
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 22px;
-}
-
-.nosek {
-    top: 60px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-}
-
-.wasy {
-    top: 75px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-}
-
-@keyframes kotek {
+@keyframes serceAnimacja {
 
     0% {
-        color: red;
-    }
-
-    49% {
         color: red;
     }
 
@@ -403,37 +368,6 @@ color:purple;
     }
 
     100% {
-        color: orange;
-    }
-}
-
-.kocie-serce:hover .oczka,
-.kocie-serce:hover .nosek,
-.kocie-serce:hover .wasy {
-    opacity: 1;
-}
-.oczka,
-.nosek,
-.wasy {
-    opacity: 0;
-    animation: pyszczek 2s steps(2) infinite;
-}
-
-@keyframes pyszczek {
-
-    0% {
-        opacity: 0;
-    }
-
-    49% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
+        color: red;
     }
 }
