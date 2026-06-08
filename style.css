@@ -218,3 +218,18 @@ color:purple;
     color: #f89d4b;
     text-decoration: underline;
 }
+.garfield-sekcja {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    margin-top: 80px;
+}
+
+.garfield-sekcja img {
+    width: 400px;
+    height: auto;
+}
+
+.garfield-opis {
+    flex: 1;
+}
