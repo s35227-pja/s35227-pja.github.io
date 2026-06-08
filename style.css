@@ -273,16 +273,21 @@ color:purple;
 }
 
 .przyciski-formularza input {
+    font-family: zebrawood-std-admitone, sans-serif;
     background-color: #ffd6a5;
     color: #6d311a;
     border: none;
-    padding: 12px 24px;
-    border-radius: 15px;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
 
 .przyciski-formularza input:hover {
     background-color: #f89d4b;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
