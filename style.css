@@ -342,3 +342,11 @@ color:purple;
 .slide.active {
     opacity: 1;
 }
+.svg-kotek {
+    text-align: center;
+    margin: 80px auto;
+}
+
+.svg-kotek svg {
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,0.2));
+}
