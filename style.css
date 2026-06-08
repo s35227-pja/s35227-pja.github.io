@@ -233,3 +233,56 @@ color:purple;
 .garfield-opis {
     flex: 1;
 }
+.formularz-sekcja {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    background-color: rgba(255, 214, 165, 0.4);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.15);
+}
+
+.formularz-sekcja h2 {
+    margin-bottom: 30px;
+}
+
+.formularz-sekcja form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formularz-sekcja label {
+    font-weight: bold;
+    color: #6d311a;
+}
+
+.formularz-sekcja input[type="text"] {
+    padding: 12px;
+    border: 2px solid #c68642;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.przyciski-formularza {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.przyciski-formularza input {
+    background-color: #ffd6a5;
+    color: #6d311a;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.przyciski-formularza input:hover {
+    background-color: #f89d4b;
+}
